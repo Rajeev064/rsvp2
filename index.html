@@ -1,53 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>IEEE FUN EVENTS</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1 class="brand"><span>IEEE</span> VIT STUDENT BRANCH</h1>
-    <div class="wrapper">
-      <div class="company-info">
-        <h3>IEEE-VIT</h3>
-        <ul>
-          <li><i class="fa fa-road"></i>VIDYALANKAR INSTITUTE OF TECHNOLOGY,WADALA</li>
-          <li><i class="fa fa-phone"></i> XYZ</li>
-          <li><i class="fa fa-envelope"></i> ABC@TEST.COM</li>
-        </ul>
-      </div>
-      <div class="contact">
-        <h3>Email Us</h3>
-        <div class="alert">Your message has been sent</div>
-        <form id="contactForm">
-          <p>
-            <label>Name</label>
-            <input type="text" name="name" id="name" required>
-          </p>
-          <p>
-            <label>Email Address</label>
-            <input type="email" name="email" id="email" required>
-          </p>
-          <p>
-            <label>Phone Number</label>
-            <input type="text" name="phone" id="phone">
-          </p>
-          <p class="full">
-            <button type="submit">Submit</button>
-          </p>
-        </form>
-      </div>
-    </div>
-  </div>
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>IEEE FUN EVENTS</title> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"> 
+  <link rel="stylesheet" href="style.css"> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <h1 class="brand"><span>IEEE</span> VIT STUDENT BRANCH</h1> 
+   <div class="wrapper"> 
+    <div class="company-info"> 
+     <h3>IEEE-VIT</h3> 
+     <ul> 
+      <li><i class="fa fa-road"></i>VIDYALANKAR INSTITUTE OF TECHNOLOGY,WADALA</li> 
+      <li><i class="fa fa-phone"></i> XYZ</li> 
+      <li><i class="fa fa-envelope"></i> ABC@TEST.COM</li> 
+     </ul> 
+    </div> 
+    <div class="contact"> 
+     <h3>Personal Information</h3> 
+     <p>Full fill the form and press submit and then add it to your calender</p>
+     
+     <div class="alert">
+      Your information has been recorded
+     </div> 
+     <form id="contactForm"> 
+      <p> <label>Name</label> <input type="text" name="name" id="name" required> </p> 
+      <p> <label>Email Address</label> <input type="email" name="email" id="email" required> </p> 
+      <p> <label>Phone Number</label> <input type="text" name="phone" id="phone"> </p> 
+      <br> 
+      <!--
+       <label>Choose a event :</label>
+         <select id="events">
+         
+           <option value="1">Treasure hunt</option>
+           <option value="2">Minecraft</option>
+           <option value="3">Minute to win it</option>
+           <option value="4">All events</option>
+           </select>--> 
+             <!--<p>Full fill the form and press submit and then add it to your calender</p>
+    -->  <p class="full"> <button type="submit">Submit</button> </p> 
+      <p id="calender"> <label>Select the event &amp; the event to google calender</label></p> 
+      <select name="vote" id="events"> <option value="MINECRAFT">MINECRAFT</option> <option value="TREASURE HUNT">TREASURE HUNT</option> <option value="MINUTE TO WIN IT">MINUTE TO WIN IT</option> <option value="ALL EVENTS">ALL EVENTS</option> </select> 
+      <a id="a"> <img src="https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif" type="button" id="btn" value="events" onclick="castvote();"></a> 
+      <!-- <input type="button" id="btn" value="events" onclick="castvote();">
 
-
-  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
-  <script src="main.js"></script>
-</body>
+          --> 
+      <!-- <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTljNm9sOG1qZWl1c2gydWszZWVnN2VuNDEgcnMzMTY3MTk2QG0&amp;tmsrc=rs3167196%40gmail.com">
+      <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif">
+    </a> 
+     --> 
+     </form> 
+    </div> 
+   </div> 
+  </div> 
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script> 
+  <script src="main.js"></script> 
+ </body>
 </html>
